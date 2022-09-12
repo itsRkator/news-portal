@@ -1,0 +1,75 @@
+.nav-bar {
+  width: 285px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.nav-content {
+    width: 248.66px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.nav-brand {
+    width: 101px;
+    height: 19px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.brand-frame {
+    text-decoration: none;
+    display: flex;
+}
+.brand-frame-1 {
+    padding: 8px;
+    gap: 10px;
+    width: 57.7px;
+    background: #121221;
+    border-radius: 4px;
+    color: #f8f8f8;
+}
+.brand-frame-2 {
+    padding: 8px;
+    width: 45px;
+    color: #121221;
+}
+.nav-search {
+    width: 16.55px;
+    height: 16.55px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 0px 0px;
+    
+}
+.nav-search > a {
+    text-decoration: none;
+    color: #585858;
+}
+.logout-btn {
+    width: 16.55px;
+    height: 16.55px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 0px 0px;
+}
+.logout-btn > a {
+    text-decoration: none;
+    color: #585858;
+}

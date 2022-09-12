@@ -1,0 +1,45 @@
+<div class="forecast">
+    <div class="forecast_current-day">
+        <span class="forecast_current-weekday">{{ currentDayWeather.day }}</span>
+        <img class="forecast_current-icon" src="../../../assets/images/sunny.png" alt="sunny">
+        <span class="forecast_current-temperature">{{ currentDayWeather.temperature }}<sup>o</sup></span>
+    </div>
+    <div class="forecast_next-days" *ngFor="let weatherFeed of weekWeatherFeed">
+        <div class="forecast_next-day">
+            <span class="forecast_next-days__weekday">{{ weatherFeed.day }}</span>
+            <img class="forecast_next-days__icon" src="../../../assets/images/sunny.png" alt="sunny">
+            <span class="forecast_next-days__temperature">
+                {{ weatherFeed.temperature }}<sup>o</sup>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="hot-topics">
+    <div class="hot-topics__title">
+        Hot Topics
+    </div>
+    <div class="hot-topics__news" style="background: url('{{ newsFeedList[0].urlToImage }}')">
+        <div class="hot-topics__news__topic">
+            {{ newsFeedList[0].title | slice: 0:50 }}...
+        </div>
+        <span class="hot-topics__news__time">
+            {{ newsFeedList[0].publishedAt | date: 'short' }}
+        </span>
+    </div>
+</div>
+<div class="news-feed">
+    <div class="news-feed__header">
+        Latest News
+    </div>
+    <div class="news-feed__container">
+        <div class="news-feed__news" *ngFor="let newsFeed of newsFeedList">
+                <img class="news-feed__news__image" src="{{ newsFeed.urlToImage }}" alt="Image" />
+            <div class="news-feed__news__title">
+                {{ newsFeed.title | slice: 0:30 }}...
+            </div>
+            <span class="news-feed__news__time">
+                {{ newsFeed.publishedAt | date: 'short' }}
+            </span>
+        </div>
+    </div>
+</div>

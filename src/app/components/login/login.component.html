@@ -1,0 +1,32 @@
+<div class="login-component">
+    <div class="background-image">
+    </div>
+    <div class="login">
+        <p class="welcome">Welcome back</p>
+        <h3 class="login-text">Login to your account</h3>
+        <form class="login-form">
+            <div class="email-section">
+                <label class="email-text" for="email">Email</label>
+                <input class="email-input" type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="password-section">
+                <label class="password-text" for="password">Password</label>
+                <input class="password-input" type="password" id="password" name="password"
+                    placeholder="Enter your password">
+            </div>
+            <div class="forgot-remember-controls">
+                <div class="remember-me">
+                    <input type="radio" id="remember" name="remember"> Remember me
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <button class="login-button" type="submit" [routerLink]="['/home']">Login now</button>
+            <div class="signup">
+                <span class="signup-text">Don't have an account? <a class="signup-link" [routerLink]="['/signup']">Join free today</a></span>
+            </div>
+        </form>
+        
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<app-nav></app-nav>
+<div class="main-content">
+    <div class="hot-news-container">
+        <div class="hot-topics">
+            <div class="text-topic">
+                Hot Topics
+            </div>
+            <div class="current-date-time">
+                {{ date }}
+            </div>
+        </div>
+    </div>
+    <div class="news-weather-container">
+        <div class="hot-news" style="background: url('{{ news[0].urlToImage }}')">
+            <div class="news-content">
+                <h1 class="news-title">
+                    {{news[0].title | slice:0:91 }}
+                </h1>
+                <span class="time-spent">{{ news[0].publishedAt | date: 'short' }}</span>
+            </div>
+        </div>
+        <div class="weather-report">
+            <div class="weather-card">
+                <div class="city-temp">
+                    <div class="temp">
+                        {{ weather.temperature }}<sup>o</sup>
+                    </div>
+                    <div class="city-name">
+                        {{ weather.city }}
+                    </div>
+                </div>
+                <div class="weather-icon">
+                    <img src="../../../assets/images/weather_snow_sun.png" alt="weather-icon">
+                </div>
+            </div>
+            <div class="week-preview">
+                <div class="week-preview-data" *ngFor="let dayData of weekTemperature">
+                    <span class="week-day">{{dayData.day}}</span>
+                    <img src="../../../assets/images/sunnyWeather.png">
+                    <span class="weekday-temperature">{{dayData.temperature}}<sup>o</sup></span>
+                    <span class="next-day">{{dayData.nextDayTemperature}}<sup>o</sup></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

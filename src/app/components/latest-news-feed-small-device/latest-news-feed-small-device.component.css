@@ -1,0 +1,199 @@
+.forecast {
+  width: 335px;
+  height: 115px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forecast_current-day {
+  width: 95px;
+  height: 115px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.forecast_current-weekday {
+  width: 24px;
+  height: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #0076ff;
+}
+.forecast_current-icon {
+  margin: 13px 0px 13px 0px;
+}
+
+.forecast_current-temperature {
+  width: 19px;
+  height: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+}
+.forecast_next-days {
+  width: 60px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.forecast_next-day {
+  width: 60px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.forecast_next-days__weekday {
+  height: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #7f7f7f;
+}
+.forecast_next-days__icon {
+  margin: 13px 0px 13px 0px;
+}
+.forecast_next-days__temperature {
+  width: 19px;
+  height: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+}
+.hot-topics {
+  width: 305px;
+  height: 258px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hot-topics__title {
+  width: 178.23px;
+  height: 42px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.hot-topics__news {
+  width: 305px;
+  height: 200px;
+  /* background: url("../../../assets/images/hotnews.jpg"), #c4c4c4; */
+  border-radius: 8px;
+}
+.hot-topics__news__topic {
+  position: absolute;
+  top: 410px;
+  left: 47px;
+  width: 281px;
+  height: 38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f8f8f8;
+}
+.hot-topics__news__time {
+  position: absolute;
+  top: 460px;
+  left: 47px;
+  width: 75px;
+  height: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #f8f8f8;
+}
+.news-feed {
+  width: 305px;
+  height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.news-feed__header {
+  width: 134px;
+  height: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #121221;
+}
+
+.news-feed__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.news-feed__news {
+  width: 143px;
+  height: 192px;
+  margin: 16px 0px 16px 0px;
+}
+
+.news-feed__news__image {
+  width: 143px;
+  height: 96px;
+  /* background: url('../../../assets/images/newsfeed.jpg'), #C4C4C4; */
+  border-radius: 8px;
+}
+.news-feed__news__title {
+  width: 143px;
+  height: 57px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121221;
+  margin: 0px 0px 11px 0px;
+}
+
+.news-feed__news__time {
+  width: 41px;
+  height: 9px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  color: #949494;
+  margin: 11px 0px 0px 0px;
+}

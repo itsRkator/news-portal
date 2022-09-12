@@ -1,0 +1,20 @@
+<div class="news-feed">
+    <div class="news-feed__header">
+        Latest News
+    </div>
+    <div class="news-feed__content" (scroll)="addNewsDataOnScrollEnd($event)">
+        <div class="news-feed__content__item" *ngFor="let news of latestNewsArr">
+            <img class="news-feed__content__item__image" src="{{news.urlToImage}}" alt="news image">
+            <div class="news-feed__content__item__title">
+                {{news.title | slice:0:37 }}
+            </div>
+            <span class="news-feed__content__item__time">
+                {{ news.publishedAt | date: 'short' }}
+            </span>
+        </div>
+    </div>
+
+    <div class="loader-container" *ngIf="loader">
+        <mat-spinner class="loader"></mat-spinner>
+    </div>
+</div>

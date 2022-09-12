@@ -1,0 +1,10 @@
+<div *ngIf="deviceWidth > 375">
+    <app-home></app-home>
+    <app-latest-news-feed></app-latest-news-feed>
+    <app-footer></app-footer>
+</div>
+<div *ngIf="deviceWidth <= 375">
+    <app-nav-small-devices></app-nav-small-devices>
+    <app-home-small-device></app-home-small-device>
+    <!-- <app-latest-news-feed-small-device></app-latest-news-feed-small-device> -->
+</div>
