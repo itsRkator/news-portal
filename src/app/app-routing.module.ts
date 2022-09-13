@@ -10,20 +10,14 @@ const routes: Routes = [
   {
     path: '',
     component: LoginComponent,
-    children: [
-      {
-        path: '',
-        component: NavComponent,
-      },
-      {
-        path: 'signup',
-        component: SignupComponent,
-      },
-      {
-        path: 'home',
-        component: HomePageComponent,
-      },
-    ],
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+  },
+  {
+    path: 'home',
+    component: HomePageComponent,
   },
 ];
 
